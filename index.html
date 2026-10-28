@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CORE MEDICAL | م. عبدالرحمن أحمد</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{--teal:#28AAA5;--teal2:#087E83;--ink:#151B20;--white:#F7F9FA;--bg:#0d1317;--card:#151d23;--line:#1f3a3d;--muted:#8fa3a8;--text:#F7F9FA;--wa:#25d366;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef4f4;--card:#fff;--line:#cfe3e3;--muted:#587077;--text:#151B20}}
+:root[data-theme="light"]{--bg:#eef4f4;--card:#fff;--line:#cfe3e3;--muted:#587077;--text:#151B20}
+:root[data-theme="dark"]{--bg:#0d1317;--card:#151d23;--line:#1f3a3d;--muted:#8fa3a8;--text:#F7F9FA}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--text);font-family:'Cairo',system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+.glow{position:fixed;inset:0;pointer-events:none;background:radial-gradient(600px 420px at 50% 0%,rgba(40,170,165,.22),transparent 70%),radial-gradient(500px 400px at 100% 100%,rgba(8,126,131,.16),transparent 70%)}
+main{position:relative;max-width:520px;margin:0 auto;padding:18px 16px 50px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{background:var(--card);color:var(--teal);border:1px solid var(--line);border-radius:30px;padding:9px 16px;font:700 14px 'Cairo';cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.brand{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:.5px;color:var(--teal);font-size:15px}
+.brand svg{width:26px;height:26px}
+.avatar{width:148px;height:148px;border-radius:50%;margin:20px auto 0;padding:4px;background:linear-gradient(135deg,var(--teal),var(--teal2));box-shadow:0 0 50px rgba(40,170,165,.35);position:relative}
+.avatar .in{width:100%;height:100%;border-radius:50%;background:var(--ink);border:4px solid var(--bg);display:grid;place-items:center;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.avatar .in svg{width:70px;height:70px}
+.badge{position:absolute;bottom:4px;inset-inline-end:4px;width:32px;height:32px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;border:3px solid var(--bg)}
+h1{text-align:center;font-size:29px;font-weight:800;margin-top:18px;line-height:1.35}
+.role{margin-top:12px;text-align:center;border:1px solid var(--line);background:rgba(40,170,165,.10);color:var(--teal);border-radius:40px;padding:11px 14px;font-weight:700;font-size:16px}
+.bio{text-align:center;color:var(--muted);font-size:15.5px;line-height:1.9;margin-top:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px 6px;text-align:center}
+.stat b{display:block;font-size:25px;font-weight:800;color:var(--teal);margin-bottom:2px}
+.stat span{color:var(--muted);font-size:12.5px;line-height:1.4;display:block}
+h2{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:18px;font-weight:700;margin:30px 0 12px}
+h2 i{width:8px;height:22px;border-radius:4px;background:linear-gradient(var(--teal),var(--teal2))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:18px}
+.wa{background:linear-gradient(160deg,rgba(8,126,131,.35),var(--card));border-color:var(--teal2)}
+.row{display:flex;align-items:center;gap:14px}
+.ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;flex:none;background:rgba(40,170,165,.14)}
+.ico svg{width:28px;height:28px}
+.ttl{font-size:19px;font-weight:800}.sub{color:var(--muted);font-size:15px;direction:ltr;text-align:start;margin-top:2px}
+.btns{display:flex;gap:10px;margin-top:14px}
+.btn{border:0;border-radius:16px;padding:14px;font:800 16px 'Cairo';cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;flex:1}
+.btn svg{width:19px;height:19px}
+.b1{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff}
+.b2{background:rgba(40,170,165,.14);color:var(--teal);border:1px solid var(--line)}
+.bw{background:var(--wa);color:#06210f}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.svc{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:13px;font-weight:700;font-size:14.5px;line-height:1.4}
+.svc .ico{width:40px;height:40px;border-radius:12px}.svc .ico svg{width:21px;height:21px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:rgba(40,170,165,.12);border:1px solid var(--line);color:var(--teal);border-radius:30px;padding:7px 14px;font-weight:700;font-size:14px}
+.trust{display:flex;flex-direction:column;gap:8px}
+.trust div{display:flex;gap:10px;align-items:center;font-weight:600;font-size:15px}
+.trust svg{width:20px;height:20px;color:var(--teal);flex:none}
+.link{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px 16px;margin-bottom:12px;text-decoration:none;color:inherit;transition:.2s}
+.link:active,.link:hover{border-color:var(--teal);transform:translateY(-1px)}
+.link .t{font-size:18px;font-weight:800}.link .h{color:var(--muted);font-size:14px;direction:ltr;text-align:start}.link .tx{flex:1;min-width:0}
+.chev{width:20px;height:20px;color:var(--muted)}[dir=ltr] .chev{transform:scaleX(-1)}
+label{display:block;font-size:13.5px;font-weight:700;color:var(--muted);margin:12px 0 6px}
+input,select,textarea{width:100%;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font:600 15px 'Cairo';outline:0}
+input:focus,select:focus,textarea:focus{border-color:var(--teal)}
+textarea{min-height:90px;resize:vertical}
+.info{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15px;margin-bottom:10px}
+.info svg{width:20px;height:20px;color:var(--teal);flex:none;margin-top:3px}
+footer{text-align:center;color:var(--muted);font-size:13.5px;margin-top:30px}
+#gear{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));inset-inline-start:16px;width:54px;height:54px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;display:none;place-items:center;box-shadow:0 6px 24px rgba(8,126,131,.5);cursor:pointer;z-index:20}
+#gear svg{width:26px;height:26px}
+#panel{position:fixed;inset:0;background:var(--bg);z-index:50;overflow-y:auto;display:none;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(100px + env(safe-area-inset-bottom,0px))}
+#panel .wrap{max-width:520px;margin:0 auto}
+#panel h3{font-size:22px;font-weight:800;color:var(--teal);margin:6px 0 4px}
+#panel .grp{font-weight:800;margin:26px 0 4px;padding-bottom:6px;border-bottom:1px solid var(--line);color:var(--text)}
+.bar{position:fixed;bottom:0;inset-inline:0;background:var(--card);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:10px;z-index:51}
+.up{display:flex;gap:10px;align-items:center}.up img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--teal)}
+.hint{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.6}
+.toast{position:fixed;bottom:calc(90px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-weight:800;padding:11px 20px;border-radius:30px;opacity:0;pointer-events:none;z-index:99;max-width:90vw;text-align:center}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div id="app"></div>
+<button id="gear" aria-label="edit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg></button>
+<div id="panel" data-lenis-prevent=""></div>
+<div class="toast" id="toast"></div>
+<script id="cfg" type="application/json">{"brand":"CORE MEDICAL","tagline_ar":"صيانة وتركيب الأجهزة الطبية","tagline_en":"Medical Equipment Service & Installation","name_ar":"م. عبدالرحمن أحمد","name_en":"Eng. Abdulrahman Ahmed","title_ar":"مهندس تقنيات الأجهزة الطبية","title_en":"Medical Device Technology Engineer","bio_ar":"أجهزتك تعمل… لنركز على ما يهم. صيانة وتشغيل وتنصيب وبيع الأجهزة الطبية بدقة وموثوقية.","bio_en":"Your equipment keeps running, so you can focus on what matters. Maintenance, commissioning, installation and sales of medical devices.","photo":"/_blob/4902712d24bb98a37dda24a656ca0573","phone":"+964 7838080676","whatsapp":"7838080676","email":"info@core-medical.iq","instagram":"core.medical.iq","tiktok":"","facebook":"كور ميديكال core medical","telegram":"emdt1","address_ar":"بغداد - العراق","address_en":"Baghdad - Iraq","map":"","hours_ar":"الاحد - الخميس: 9 ص - 4 م","hours_en":"San- Thu: 9 AM - 4 PM","stats":[{"n":"500","ar":"جهاز تمت صيانته","en":"Devices serviced"},{"n":"5","ar":"سنوات خبرة","en":"Years of experience"},{"n":"100","ar":"عميل ومنشأة","en":"Clients & facilities"}],"services":"صيانة الأعطال|Repair & troubleshooting\nالصيانة الوقائية والدورية|Preventive maintenance\nالتركيب والتشغيل والإعداد|Installation & commissioning\nالمعايرة وفحص الأمان|Calibration & safety testing\nالبرمجة والتحديثات|Software & updates\nالدعم الفني والاستشارات|Technical support\nبيع الأجهزة وقطع الغيار|Equipment & spare parts sales","brands":"","trust":"زيارات ميدانية للمستشفيات والعيادات|On-site visits to hospitals & clinics\nتقرير فني بعد كل خدمة|Technical report after every service\nقطع غيار أصلية|Genuine spare parts\nاستجابة سريعة للأعطال الطارئة|Fast response to urgent faults","pdfUrl":"","pdfExt":"","pdfName_ar":"كتالوج الخدمات والأجهزة","pdfName_en":"Services & Devices Catalog"}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+var C=JSON.parse(document.getElementById("cfg").textContent),L="ar",$=function(i){return document.getElementById(i)};
+try{L=localStorage.getItem("lang")||"ar"}catch(e){}
+var U={ar:{lang:"English",stats:"",svc:"خدماتنا",brands:"الأجهزة والعلامات التجارية",trust:"لماذا نحن",quote:"اطلب خدمة أو عرض سعر",qs:"نوع الطلب",q1:"صيانة",q2:"تركيب وتشغيل",q3:"شراء جهاز",q4:"استشارة",dev:"اسم الجهاز / العطل",devph:"مثال: جهاز تعقيم - لا يصل للضغط",send:"إرسال عبر واتساب",wa:"واتساب الأعمال",msg:"مراسلة",copy:"نسخ",call:"اتصال",mail:"بريد",copied:"تم نسخ الرقم",acc:"حساباتي الرسمية",loc:"الموقع وأوقات العمل",map:"فتح الخريطة",save:"حفظ جهة الاتصال",share:"مشاركة",shared:"تم نسخ الرابط",dl:"تحميل",foot:"جميع الحقوق محفوظة",ig:"الإنستغرام",tt:"التيك توك",fb:"الفيسبوك",tg:"تيليغرام",hi:"مرحباً، أتواصل معك بخصوص: ",ct:"التواصل"},
+en:{lang:"العربية",svc:"Our Services",brands:"Devices & Brands",trust:"Why choose us",quote:"Request a service or quote",qs:"Request type",q1:"Repair",q2:"Installation",q3:"Buy a device",q4:"Consultation",dev:"Device / issue",devph:"e.g. Autoclave - not reaching pressure",send:"Send via WhatsApp",wa:"WhatsApp Business",msg:"Message",copy:"Copy",call:"Call",mail:"Email",copied:"Number copied",acc:"My Official Accounts",loc:"Location & Hours",map:"Open map",save:"Save contact",share:"Share",shared:"Link copied",dl:"Download",foot:"All rights reserved",ig:"Instagram",tt:"TikTok",fb:"Facebook",tg:"Telegram",hi:"Hello, I'm contacting you about: ",ct:"Contact"}};
+var I={wa:'<svg viewBox="0 0 24 24" fill="#25d366"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.100.5.200.5.300.1.200.1.800-.1 1.500z"/></svg>',
+ig:'<svg viewBox="0 0 24 24" fill="none" stroke="#ff4d8d" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#ff4d8d"/></svg>',
+tt:'<svg viewBox="0 0 24 24" fill="#25f4ee"><path d="M16.6 2h-3.2v13.2a2.8 2.8 0 1 1-2-2.7V9.200a6 6 0 1 0 5.200 5.900V8.400a7.500 7.500 0 0 0 4.400 1.400V6.600A4.400 4.400 0 0 1 16.600 2z"/></svg>',
+fb:'<svg viewBox="0 0 24 24" fill="#1877f2"><path d="M22 12a10 10 0 1 0-11.600 9.900v-7H7.900V12h2.500V9.800c0-2.500 1.500-3.900 3.800-3.900 1.100 0 2.200.2 2.200.2v2.500h-1.300c-1.200 0-1.600.8-1.600 1.600V12h2.800l-.4 2.900h-2.300v7A10 10 0 0 0 22 12z"/></svg>',
+tg:'<svg viewBox="0 0 24 24" fill="#2aabee"><path d="M21.800 3.300L2.700 10.700c-1.300.5-1.300 1.300-.2 1.600l4.900 1.500 1.900 5.800c.2.600.4.800.9.800.4 0 .6-.2.900-.4l2.300-2.200 4.800 3.500c.9.500 1.500.2 1.700-.8l3.100-14.700c.3-1.200-.5-1.800-1.200-1.500zM8.500 13.300l9.500-6c.4-.3.800-.1.500.2l-7.800 7-.3 3.300z"/></svg>',
+ph:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.300 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg>',
+ml:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>',
+pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+clk:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>',
+ok:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>',
+pdf:'<svg viewBox="0 0 24 24" fill="none" stroke="#28AAA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6m-3 3 3 3 3-3"/></svg>',
+sv:['<path d="M14.700 6.300a4 4 0 0 0-5.400 5.400L3 18l3 3 6.300-6.300a4 4 0 0 0 5.400-5.400l-2.500 2.500-2.400-.6-.6-2.400z"/>','<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>','<circle cx="12" cy="12" r="3"/><path d="M19.400 15a1.700 1.700 0 0 0 .3 1.800l.1.1a2 2 0 1 1-2.800 2.800l-.1-.1a1.700 1.700 0 0 0-1.800-.3 1.700 1.700 0 0 0-1 1.500V21a2 2 0 0 1-4 0v-.1a1.700 1.700 0 0 0-1.100-1.500 1.700 1.700 0 0 0-1.800.3l-.1.1a2 2 0 1 1-2.800-2.800l.1-.1a1.700 1.700 0 0 0 .3-1.800 1.700 1.700 0 0 0-1.500-1H3a2 2 0 0 1 0-4h.1a1.700 1.700 0 0 0 1.500-1.100 1.700 1.700 0 0 0-.3-1.800l-.1-.1a2 2 0 1 1 2.800-2.800l.1.1a1.700 1.700 0 0 0 1.800.3H9a1.700 1.700 0 0 0 1-1.500V3a2 2 0 0 1 4 0v.1a1.700 1.700 0 0 0 1 1.500 1.700 1.700 0 0 0 1.800-.3l.1-.1a2 2 0 1 1 2.800 2.800l-.1.100a1.700 1.700 0 0 0-.3 1.800V9a1.700 1.700 0 0 0 1.500 1H21a2 2 0 0 1 0 4h-.1a1.700 1.700 0 0 0-1.500 1z"/>','<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>','<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-7h3zM3 19a2 2 0 0 0 2 2h1v-7H3z"/>','<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>']};
+function e(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function t(k){return U[L][k]}function f(k){return C[k+"_"+L]||C[k+"_ar"]||""}
+function lines(s){return String(s||"").split("\n").map(function(x){return x.trim()}).filter(Boolean)}
+function ph(){return String(C.whatsapp||"").replace(/\D/g,"")}
+function logo(){return '<svg viewBox="0 0 48 48" fill="none"><path d="M36 10a19 19 0 1 0 0 28" stroke="#28AAA5" stroke-width="5" stroke-linecap="round"/><circle cx="24" cy="24" r="8" fill="#087E83"/><circle cx="9" cy="24" r="2.500" fill="#28AAA5"/></svg>'}
+function toast(m){var el=$("toast");el.textContent=m;if(window.gsap){gsap.killTweensOf(el);gsap.fromTo(el,{opacity:0,y:20},{opacity:1,y:0,duration:.3,yoyo:true,repeat:1,repeatDelay:1.6})}else{el.style.opacity=1;setTimeout(function(){el.style.opacity=0},2000)}}
+function render(anim){
+ document.documentElement.lang=L;document.documentElement.dir=L==="ar"?"rtl":"ltr";
+ var h='<main><div class="top"><div class="brand">'+logo()+e(C.brand)+'</div><button class="pill" id="lang">'+t("lang")+'</button></div>';
+ h+='<div class="avatar" id="av"><div class="in">'+(C.photo?'<img src="'+e(C.photo)+'" alt="">':logo())+'</div><div class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div></div>';
+ h+='<h1>'+e(f("name"))+'</h1><div class="role">'+e(f("title"))+'</div><p class="bio">'+e(f("bio"))+'</p>';
+ var st=(C.stats||[]).filter(function(s){return s.n});
+ if(st.length)h+='<div class="stats">'+st.map(function(s){return '<div class="stat"><b data-n="'+e(s.n)+'">+'+e(s.n)+'</b><span>'+e(s[L]||s.ar)+'</span></div>'}).join("")+'</div>';
+ h+='<h2><i></i>'+t("ct")+'</h2><div class="card wa"><div class="row"><div class="ico">'+I.wa+'</div><div><div class="ttl">'+t("wa")+'</div><div class="sub">'+e(C.phone)+'</div></div></div><div class="btns"><button class="btn b2" id="copy" style="flex:.6">'+t("copy")+'</button><a class="btn bw" target="_blank" rel="noopener" href="https://wa.me/'+ph()+'">'+t("msg")+'</a></div><div class="btns"><a class="btn b1" href="tel:'+e(String(C.phone).replace(/[^\d+]/g,""))+'">'+I.ph+t("call")+'</a>'+(C.email?'<a class="btn b2" href="mailto:'+e(C.email)+'">'+I.ml+t("mail")+'</a>':'')+'</div></div>';
+ h+='<h2><i></i>'+t("quote")+'</h2><div class="card"><label style="margin-top:0">'+t("qs")+'</label><select id="qt"><option>'+t("q1")+'</option><option>'+t("q2")+'</option><option>'+t("q3")+'</option><option>'+t("q4")+'</option></select><label>'+t("dev")+'</label><input id="qd" placeholder="'+e(t("devph"))+'"><div class="btns"><button class="btn bw" id="qs">'+I.wa.replace("#25d366","#06210f")+t("send")+'</button></div></div>';
+ var sv=lines(C.services);
+ if(sv.length)h+='<h2><i></i>'+t("svc")+'</h2><div class="grid2">'+sv.map(function(x,i){var p=x.split("|");return '<div class="svc"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#28AAA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+I.sv[i%I.sv.length]+'</svg></div><span>'+e((L==="ar"?p[0]:p[1])||p[0])+'</span></div>'}).join("")+'</div>';
+ var br=String(C.brands||"").split(",").map(function(x){return x.trim()}).filter(Boolean);
+ if(br.length)h+='<h2><i></i>'+t("brands")+'</h2><div class="chips">'+br.map(function(b){return '<span class="chip">'+e(b)+'</span>'}).join("")+'</div>';
+ var tr=lines(C.trust);
+ if(tr.length)h+='<h2><i></i>'+t("trust")+'</h2><div class="card trust">'+tr.map(function(x){var p=x.split("|");return '<div>'+I.ok+e((L==="ar"?p[0]:p[1])||p[0])+'</div>'}).join("")+'</div>';
+ var pu=C.pdfUrl||C.pdfExt;
+ if(pu)h+='<a class="link" style="margin-top:22px;border-color:var(--teal)" target="_blank" rel="noopener" href="'+e(pu)+'"><div class="ico">'+I.pdf+'</div><div class="tx"><div class="t">'+e(f("pdfName"))+'</div><div class="h">PDF · '+t("dl")+'</div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></a>';
+ var ac=[["ig","ig","https://instagram.com/"+C.instagram,"@"+C.instagram,C.instagram],["tt","tt","https://www.tiktok.com/@"+C.tiktok,"@"+C.tiktok,C.tiktok],["fb","fb","https://facebook.com/"+C.facebook,C.facebook,C.facebook],["tg","tg","https://t.me/"+C.telegram,"@"+C.telegram,C.telegram]].filter(function(a){return a[4]});
+ if(ac.length)h+='<h2><i></i>'+t("acc")+'</h2>'+ac.map(function(a){return '<a class="link" target="_blank" rel="noopener" href="'+e(a[2])+'"><div class="ico">'+I[a[0]]+'</div><div class="tx"><div class="t">'+t(a[1])+'</div><div class="h">'+e(a[3])+'</div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></a>'}).join("");
+ if(f("address")||f("hours")){h+='<h2><i></i>'+t("loc")+'</h2><div class="card">'+(f("address")?'<div class="info">'+I.pin+'<span>'+e(f("address"))+'</span></div>':'')+(f("hours")?'<div class="info">'+I.clk+'<span>'+e(f("hours"))+'</span></div>':'')+(C.map?'<div class="btns"><a class="btn b2" target="_blank" rel="noopener" href="'+e(C.map)+'">'+I.pin+t("map")+'</a></div>':'')+'</div>'}
+ h+='<div class="btns" style="margin-top:22px"><button class="btn b1" id="vc">'+t("save")+'</button><button class="btn b2" id="sh">'+t("share")+'</button></div><footer>© '+e(f("name"))+' | '+t("foot")+'</footer></main>';
+ $("app").innerHTML=h;
+ $("lang").onclick=function(){L=L==="ar"?"en":"ar";try{localStorage.setItem("lang",L)}catch(x){}render(true)};
+ $("copy").onclick=function(){var d=function(){toast(t("copied"))};try{navigator.clipboard.writeText(C.phone).then(d,d)}catch(x){d()}};
+ $("qs").onclick=function(){var m=t("hi")+$("qt").value+(($("qd").value||"").trim()?" - "+$("qd").value.trim():"");window.open("https://wa.me/"+ph()+"?text="+encodeURIComponent(m),"_blank")};
+ $("sh").onclick=function(){var u=location.href;if(navigator.share){navigator.share({title:f("name"),url:u}).catch(function(){})}else{try{navigator.clipboard.writeText(u)}catch(x){}toast(t("shared"))}};
+ $("vc").onclick=async function(){try{var d=await claude.use("downloads");if(!d)return toast(t("copied")&&"—");var v="BEGIN:VCARD\nVERSION:3.0\nFN:"+C.name_en+"\nORG:"+C.brand+"\nTITLE:"+C.title_en+"\nTEL;TYPE=CELL:"+C.phone+"\nEMAIL:"+C.email+"\nEND:VCARD";await d.save({filename:"contact.vcf",data:v})}catch(x){}};
+ var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+ document.querySelectorAll("[data-n]").forEach(function(el){el.textContent="+"+el.dataset.n});
+ if(window.gsap&&!reduce){
+  gsap.from("#av",{scale:.6,opacity:0,duration:.7,ease:"back.out(1.7)"});
+  gsap.from("h1,.role,.bio,.stat,.card,.svc,.link",{y:22,opacity:0,duration:.55,stagger:.05,delay:anim?0:.2,ease:"power2.out",clearProps:"all"});
+  gsap.to("#av",{boxShadow:"0 0 80px rgba(40,170,165,.55)",duration:1.8,yoyo:true,repeat:-1,ease:"sine.inOut"});
+  document.querySelectorAll("[data-n]").forEach(function(el){var o={v:0},n=parseFloat(el.dataset.n);if(isNaN(n))return;gsap.to(o,{v:n,duration:1.4,delay:.5,ease:"power2.out",onUpdate:function(){el.textContent="+"+Math.round(o.v)}})});
+ }
+}
+render(false);
+try{var lenis=new Lenis({lerp:.09});gsap.ticker.add(function(x){lenis.raf(x*1000)});gsap.ticker.lagSmoothing(0)}catch(x){}
+
+/* ===== وضع التحرير (للمالك فقط) ===== */
+var F=[["g","الهوية والبيانات الشخصية"],["brand","اسم البراند / الملف الرئيسي"],["name_ar","الاسم (عربي)"],["name_en","الاسم (English)"],["title_ar","المسمى الوظيفي (عربي)"],["title_en","Job title (English)"],["tagline_ar","شعار البراند (عربي)"],["tagline_en","Tagline (English)"],["bio_ar","نبذة (عربي)","ta"],["bio_en","Bio (English)","ta"],
+["g","التواصل"],["phone","رقم الهاتف (للعرض)"],["whatsapp","رقم واتساب بالصيغة الدولية بدون + (مثال 9647701234567)"],["email","البريد الإلكتروني"],
+["g","الحسابات (اليوزر فقط بدون @)"],["instagram","Instagram"],["tiktok","TikTok"],["facebook","Facebook (اليوزر أو اسم الصفحة)"],["telegram","Telegram"],
+["g","الموقع وأوقات العمل"],["address_ar","العنوان (عربي)"],["address_en","Address (English)"],["map","رابط خرائط Google"],["hours_ar","أوقات العمل (عربي)"],["hours_en","Working hours (English)"],
+["g","الخدمات والثقة"],["services","الخدمات: سطر لكل خدمة بالشكل  عربي|English","ta"],["brands","العلامات التجارية للأجهزة (افصل بفاصلة، اتركه فارغاً للإخفاء)"],["trust","نقاط الثقة: سطر لكل نقطة  عربي|English","ta"],
+["g","ملف PDF"],["pdfName_ar","اسم الملف (عربي)"],["pdfName_en","File name (English)"],["pdfExt","رابط خارجي للملف (Google Drive / Dropbox) للملفات الكبيرة"]];
+var D=null;
+function fld(k,lb,ty){var v=D[k]==null?"":D[k];return '<label>'+lb+'</label>'+(ty==="ta"?'<textarea data-k="'+k+'">'+e(v)+'</textarea>':'<input data-k="'+k+'" value="'+e(v)+'">')}
+function openEd(){
+ D=JSON.parse(JSON.stringify(C));var h='<div class="wrap"><h3>تعديل الصفحة</h3><div class="hint">عدّل الحقول ثم اضغط «حفظ ونشر». التغييرات تظهر لكل الزوار.</div>';
+ h+='<div class="grp">الصورة الشخصية</div><div class="up"><img id="pp" src="'+e(D.photo||"")+'" style="'+(D.photo?"":"display:none")+'"><button class="btn b2" id="upp" style="flex:none;padding:12px 18px">رفع صورة</button><button class="btn b2" id="rmp" style="flex:none;padding:12px 18px">حذف</button></div>';
+ F.forEach(function(x,i){if(x[0]==="g"){h+='<div class="grp">'+x[1]+'</div>';if(x[1]==="الخدمات والثقة"){}}else h+=fld(x[0],x[1],x[2]);});
+ h=h.replace('<div class="grp">الخدمات والثقة</div>','<div class="grp">الإحصائيات (اترك الرقم فارغاً لإخفاء الإحصائية)</div>'+[0,1,2].map(function(i){var s=D.stats[i]||{n:"",ar:"",en:""};return '<label>إحصائية '+(i+1)+'</label><div class="grid2"><input data-s="'+i+'.n" placeholder="الرقم" value="'+e(s.n)+'"><input data-s="'+i+'.ar" placeholder="العنوان عربي" value="'+e(s.ar)+'"></div><input style="margin-top:8px" data-s="'+i+'.en" placeholder="Label English" value="'+e(s.en)+'">'}).join("")+'<div class="grp">الخدمات والثقة</div>');
+ h=h.replace('<div class="grp">ملف PDF</div>','<div class="grp">ملف PDF</div><div class="up"><button class="btn b2" id="upf" style="flex:none;padding:12px 18px">رفع ملف PDF</button><span id="fn" class="hint">'+(D.pdfUrl?"تم رفع ملف":"لا يوجد ملف")+'</span><button class="btn b2" id="rmf" style="flex:none;padding:12px 18px">حذف</button></div><div class="hint">الرفع المباشر حدّه 20 ميغابايت. للملفات الأكبر (حتى 200MB) ارفعها على Google Drive وضع الرابط في الحقل الأخير.</div>');
+ h+='</div><div class="bar"><button class="btn b2" id="cx">إلغاء</button><button class="btn b1" id="sv" style="flex:2">حفظ ونشر</button></div>';
+ $("panel").innerHTML=h;$("panel").style.display="block";try{lenis.stop()}catch(x){}
+ $("cx").onclick=closeEd;
+ $("rmp").onclick=function(){D.photo="";$("pp").style.display="none"};
+ $("rmf").onclick=function(){D.pdfUrl="";$("fn").textContent="لا يوجد ملف"};
+ $("upp").onclick=function(){pick("image/*",20,function(u){D.photo=u;$("pp").src=u;$("pp").style.display="block"})};
+ $("upf").onclick=function(){pick("application/pdf",20,function(u,fl){D.pdfUrl=u;$("fn").textContent=fl.name})};
+ $("sv").onclick=save;
+}
+function closeEd(){$("panel").style.display="none";$("panel").innerHTML="";try{lenis.start()}catch(x){}}
+async function pick(acc,mb,cb){
+ var inp=document.createElement("input");inp.type="file";inp.accept=acc;
+ inp.onchange=async function(){var fl=inp.files[0];if(!fl)return;
+  if(fl.size>mb*1048576)return toast("الملف أكبر من "+mb+" ميغابايت — استخدم رابط Google Drive");
+  try{var a=await claude.use("assets");if(!a)return toast("الرفع غير متاح لك");toast("جارٍ الرفع…");var r=await a.upload(fl);cb(r.url,fl);toast("تم الرفع")}catch(x){toast("فشل الرفع")}};
+ inp.click();
+}
+function collect(){
+ document.querySelectorAll("#panel [data-k]").forEach(function(i){D[i.dataset.k]=i.value.trim()});
+ D.stats=[0,1,2].map(function(i){var g=function(k){return document.querySelector('#panel [data-s="'+i+"."+k+'"]').value.trim()};return{n:g("n"),ar:g("ar"),en:g("en")}});
+ D.whatsapp=String(D.whatsapp).replace(/\D/g,"");
+ ["instagram","tiktok","telegram"].forEach(function(k){D[k]=String(D[k]).replace(/^@/,"")});
+}
+function buildDoc(cfg){
+ var c=document.documentElement.cloneNode(true);
+ c.querySelector("#app").innerHTML="";c.querySelector("#panel").innerHTML="";c.querySelector("#panel").removeAttribute("style");
+ var g=c.querySelector("#gear");g.removeAttribute("style");c.querySelector("#toast").removeAttribute("style");c.querySelector("#toast").textContent="";
+ c.querySelector("#cfg").textContent=JSON.stringify(cfg).replace(/</g,"\\u003c");
+ c.removeAttribute("class");c.removeAttribute("style");c.querySelector("body").removeAttribute("style");c.querySelector("body").removeAttribute("class");
+ return "<!DOCTYPE html>\n"+c.outerHTML;
+}
+async function save(){
+ collect();$("sv").disabled=true;$("sv").textContent="جارٍ النشر…";
+ try{var a=await claude.use("artifact");if(!a)throw 0;var r=await a.publish(buildDoc(D));if(r&&r.conflict)toast("تعارض: أعد المحاولة")}
+ catch(x){toast("تعذر النشر");$("sv").disabled=false;$("sv").textContent="حفظ ونشر"}
+}
+(async function(){try{var u=await claude.use("user");if(u&&await u.isOwner()){var g=$("gear");g.style.display="grid";g.onclick=openEd}}catch(x){}})();
+</script>
+
+
+</body></html>
