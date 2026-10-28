@@ -82,9 +82,7 @@ footer{text-align:center;color:var(--muted);font-size:13.5px;margin-top:30px}
 <button id="gear" aria-label="edit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg></button>
 <div id="panel" data-lenis-prevent=""></div>
 <div class="toast" id="toast"></div>
-<script id="cfg" type="application/json">{"brand":"CORE MEDICAL","tagline_ar":"صيانة وتركيب الأجهزة الطبية","tagline_en":"Medical Equipment Service & Installation","name_ar":"م. عبدالرحمن أحمد","name_en":"Eng. Abdulrahman Ahmed","title_ar":"مهندس تقنيات الأجهزة الطبية","title_en":"Medical Device Technology Engineer","bio_ar":كور ميديكال|صيانة الأجهزة الطبية
-🏥 صيانة وقائية وتصحيحية، نصب وتشغيل وفحص فني
-📍 بغداد | .","bio_en":"Your equipment keeps running, so you can focus on what matters. Maintenance, commissioning, installation and sales of medical devices.","photo":"/_blob/4902712d24bb98a37dda24a656ca0573","phone":"+964 07838080676","whatsapp":"07838080676","email":"info@core-medical.iq","instagram":"core.medical.iq","tiktok":"","facebook":"كور ميديكال core medical","telegram":"emdt1","address_ar":"بغداد - العراق","address_en":"Baghdad - Iraq","map":"","hours_ar":"الاحد - الخميس: 9 ص - 4 م","hours_en":"San- Thu: 9 AM - 4 PM","stats":[{"n":"500","ar":"جهاز تمت صيانته","en":"Devices serviced"},{"n":"5","ar":"سنوات خبرة","en":"Years of experience"},{"n":"100","ar":"عميل ومنشأة","en":"Clients & facilities"}],"services":"صيانة الأعطال|Repair & troubleshooting\nالصيانة الوقائية والدورية|Preventive maintenance\nالتركيب والتشغيل والإعداد|Installation & commissioning\nالمعايرة وفحص الأمان|Calibration & safety testing\nالبرمجة والتحديثات|Software & updates\nالدعم الفني والاستشارات|Technical support\nبيع الأجهزة وقطع الغيار|Equipment & spare parts sales","brands":"","trust":"زيارات ميدانية للمستشفيات والعيادات|On-site visits to hospitals & clinics\nتقرير فني بعد كل خدمة|Technical report after every service\nقطع غيار أصلية|Genuine spare parts\nاستجابة سريعة للأعطال الطارئة|Fast response to urgent faults","pdfUrl":"","pdfExt":"","pdfName_ar":"كتالوج الخدمات والأجهزة","pdfName_en":"Services & Devices Catalog"}</script>
+<script id="cfg" type="application/json">{"brand":"CORE MEDICAL","tagline_ar":"صيانة وتركيب الأجهزة الطبية","tagline_en":"Medical Equipment Service & Installation","name_ar":"م. عبدالرحمن أحمد","name_en":"Eng. Abdulrahman Ahmed","title_ar":"مهندس تقنيات الأجهزة الطبية","title_en":"Medical Device Technology Engineer","bio_ar":" صيانة وتشغيل وتنصيب وبيع الأجهزة الطبية بدقة عالية ودعم فني سريع وخدمة موثوقة.","bio_en":"Your equipment keeps running, so you can focus on what matters. Maintenance, commissioning, installation and sales of medical devices.","photo":"/_blob/4902712d24bb98a37dda24a656ca0573","phone":"+964 07838080676","whatsapp":"07838080676","email":"info@core-medical.iq","instagram":"core.medical.iq","tiktok":"","facebook":"كور ميديكال core medical","telegram":"emdt1","address_ar":"بغداد - العراق","address_en":"Baghdad - Iraq","map":"","hours_ar":"الاحد - الخميس: 9 ص - 4 م","hours_en":"San- Thu: 9 AM - 4 PM","stats":[{"n":"500","ar":"جهاز تمت صيانته","en":"Devices serviced"},{"n":"5","ar":"سنوات خبرة","en":"Years of experience"},{"n":"100","ar":"عميل ومنشأة","en":"Clients & facilities"}],"services":"صيانة الأعطال|Repair & troubleshooting\nالصيانة الوقائية والدورية|Preventive maintenance\nالتركيب والتشغيل والإعداد|Installation & commissioning\nالمعايرة وفحص الأمان|Calibration & safety testing\nالبرمجة والتحديثات|Software & updates\nالدعم الفني والاستشارات|Technical support\nبيع الأجهزة وقطع الغيار|Equipment & spare parts sales","brands":"","trust":"زيارات ميدانية للمستشفيات والعيادات|On-site visits to hospitals & clinics\nتقرير فني بعد كل خدمة|Technical report after every service\nقطع غيار أصلية|Genuine spare parts\nاستجابة سريعة للأعطال الطارئة|Fast response to urgent faults","pdfUrl":"","pdfExt":"","pdfName_ar":"كتالوج الخدمات والأجهزة","pdfName_en":"Services & Devices Catalog"}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
@@ -126,82 +124,4 @@ function render(anim){
  var tr=lines(C.trust);
  if(tr.length)h+='<h2><i></i>'+t("trust")+'</h2><div class="card trust">'+tr.map(function(x){var p=x.split("|");return '<div>'+I.ok+e((L==="ar"?p[0]:p[1])||p[0])+'</div>'}).join("")+'</div>';
  var pu=C.pdfUrl||C.pdfExt;
- if(pu)h+='<a class="link" style="margin-top:22px;border-color:var(--teal)" target="_blank" rel="noopener" href="'+e(pu)+'"><div class="ico">'+I.pdf+'</div><div class="tx"><div class="t">'+e(f("pdfName"))+'</div><div class="h">PDF · '+t("dl")+'</div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></a>';
- var ac=[["ig","ig","https://instagram.com/"+C.instagram,"@"+C.instagram,C.instagram],["tt","tt","https://www.tiktok.com/@"+C.tiktok,"@"+C.tiktok,C.tiktok],["fb","fb","https://facebook.com/"+C.facebook,C.facebook,C.facebook],["tg","tg","https://t.me/"+C.telegram,"@"+C.telegram,C.telegram]].filter(function(a){return a[4]});
- if(ac.length)h+='<h2><i></i>'+t("acc")+'</h2>'+ac.map(function(a){return '<a class="link" target="_blank" rel="noopener" href="'+e(a[2])+'"><div class="ico">'+I[a[0]]+'</div><div class="tx"><div class="t">'+t(a[1])+'</div><div class="h">'+e(a[3])+'</div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></a>'}).join("");
- if(f("address")||f("hours")){h+='<h2><i></i>'+t("loc")+'</h2><div class="card">'+(f("address")?'<div class="info">'+I.pin+'<span>'+e(f("address"))+'</span></div>':'')+(f("hours")?'<div class="info">'+I.clk+'<span>'+e(f("hours"))+'</span></div>':'')+(C.map?'<div class="btns"><a class="btn b2" target="_blank" rel="noopener" href="'+e(C.map)+'">'+I.pin+t("map")+'</a></div>':'')+'</div>'}
- h+='<div class="btns" style="margin-top:22px"><button class="btn b1" id="vc">'+t("save")+'</button><button class="btn b2" id="sh">'+t("share")+'</button></div><footer>© '+e(f("name"))+' | '+t("foot")+'</footer></main>';
- $("app").innerHTML=h;
- $("lang").onclick=function(){L=L==="ar"?"en":"ar";try{localStorage.setItem("lang",L)}catch(x){}render(true)};
- $("copy").onclick=function(){var d=function(){toast(t("copied"))};try{navigator.clipboard.writeText(C.phone).then(d,d)}catch(x){d()}};
- $("qs").onclick=function(){var m=t("hi")+$("qt").value+(($("qd").value||"").trim()?" - "+$("qd").value.trim():"");window.open("https://wa.me/"+ph()+"?text="+encodeURIComponent(m),"_blank")};
- $("sh").onclick=function(){var u=location.href;if(navigator.share){navigator.share({title:f("name"),url:u}).catch(function(){})}else{try{navigator.clipboard.writeText(u)}catch(x){}toast(t("shared"))}};
- $("vc").onclick=async function(){try{var d=await claude.use("downloads");if(!d)return toast(t("copied")&&"—");var v="BEGIN:VCARD\nVERSION:3.0\nFN:"+C.name_en+"\nORG:"+C.brand+"\nTITLE:"+C.title_en+"\nTEL;TYPE=CELL:"+C.phone+"\nEMAIL:"+C.email+"\nEND:VCARD";await d.save({filename:"contact.vcf",data:v})}catch(x){}};
- var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
- document.querySelectorAll("[data-n]").forEach(function(el){el.textContent="+"+el.dataset.n});
- if(window.gsap&&!reduce){
-  gsap.from("#av",{scale:.6,opacity:0,duration:.7,ease:"back.out(1.7)"});
-  gsap.from("h1,.role,.bio,.stat,.card,.svc,.link",{y:22,opacity:0,duration:.55,stagger:.05,delay:anim?0:.2,ease:"power2.out",clearProps:"all"});
-  gsap.to("#av",{boxShadow:"0 0 80px rgba(40,170,165,.55)",duration:1.8,yoyo:true,repeat:-1,ease:"sine.inOut"});
-  document.querySelectorAll("[data-n]").forEach(function(el){var o={v:0},n=parseFloat(el.dataset.n);if(isNaN(n))return;gsap.to(o,{v:n,duration:1.4,delay:.5,ease:"power2.out",onUpdate:function(){el.textContent="+"+Math.round(o.v)}})});
- }
-}
-render(false);
-try{var lenis=new Lenis({lerp:.09});gsap.ticker.add(function(x){lenis.raf(x*1000)});gsap.ticker.lagSmoothing(0)}catch(x){}
-
-/* ===== وضع التحرير (للمالك فقط) ===== */
-var F=[["g","الهوية والبيانات الشخصية"],["brand","اسم البراند / الملف الرئيسي"],["name_ar","الاسم (عربي)"],["name_en","الاسم (English)"],["title_ar","المسمى الوظيفي (عربي)"],["title_en","Job title (English)"],["tagline_ar","شعار البراند (عربي)"],["tagline_en","Tagline (English)"],["bio_ar","نبذة (عربي)","ta"],["bio_en","Bio (English)","ta"],
-["g","التواصل"],["phone","رقم الهاتف (للعرض)"],["whatsapp","رقم واتساب بالصيغة الدولية بدون + (مثال 9647701234567)"],["email","البريد الإلكتروني"],
-["g","الحسابات (اليوزر فقط بدون @)"],["instagram","Instagram"],["tiktok","TikTok"],["facebook","Facebook (اليوزر أو اسم الصفحة)"],["telegram","Telegram"],
-["g","الموقع وأوقات العمل"],["address_ar","العنوان (عربي)"],["address_en","Address (English)"],["map","رابط خرائط Google"],["hours_ar","أوقات العمل (عربي)"],["hours_en","Working hours (English)"],
-["g","الخدمات والثقة"],["services","الخدمات: سطر لكل خدمة بالشكل  عربي|English","ta"],["brands","العلامات التجارية للأجهزة (افصل بفاصلة، اتركه فارغاً للإخفاء)"],["trust","نقاط الثقة: سطر لكل نقطة  عربي|English","ta"],
-["g","ملف PDF"],["pdfName_ar","اسم الملف (عربي)"],["pdfName_en","File name (English)"],["pdfExt","رابط خارجي للملف (Google Drive / Dropbox) للملفات الكبيرة"]];
-var D=null;
-function fld(k,lb,ty){var v=D[k]==null?"":D[k];return '<label>'+lb+'</label>'+(ty==="ta"?'<textarea data-k="'+k+'">'+e(v)+'</textarea>':'<input data-k="'+k+'" value="'+e(v)+'">')}
-function openEd(){
- D=JSON.parse(JSON.stringify(C));var h='<div class="wrap"><h3>تعديل الصفحة</h3><div class="hint">عدّل الحقول ثم اضغط «حفظ ونشر». التغييرات تظهر لكل الزوار.</div>';
- h+='<div class="grp">الصورة الشخصية</div><div class="up"><img id="pp" src="'+e(D.photo||"")+'" style="'+(D.photo?"":"display:none")+'"><button class="btn b2" id="upp" style="flex:none;padding:12px 18px">رفع صورة</button><button class="btn b2" id="rmp" style="flex:none;padding:12px 18px">حذف</button></div>';
- F.forEach(function(x,i){if(x[0]==="g"){h+='<div class="grp">'+x[1]+'</div>';if(x[1]==="الخدمات والثقة"){}}else h+=fld(x[0],x[1],x[2]);});
- h=h.replace('<div class="grp">الخدمات والثقة</div>','<div class="grp">الإحصائيات (اترك الرقم فارغاً لإخفاء الإحصائية)</div>'+[0,1,2].map(function(i){var s=D.stats[i]||{n:"",ar:"",en:""};return '<label>إحصائية '+(i+1)+'</label><div class="grid2"><input data-s="'+i+'.n" placeholder="الرقم" value="'+e(s.n)+'"><input data-s="'+i+'.ar" placeholder="العنوان عربي" value="'+e(s.ar)+'"></div><input style="margin-top:8px" data-s="'+i+'.en" placeholder="Label English" value="'+e(s.en)+'">'}).join("")+'<div class="grp">الخدمات والثقة</div>');
- h=h.replace('<div class="grp">ملف PDF</div>','<div class="grp">ملف PDF</div><div class="up"><button class="btn b2" id="upf" style="flex:none;padding:12px 18px">رفع ملف PDF</button><span id="fn" class="hint">'+(D.pdfUrl?"تم رفع ملف":"لا يوجد ملف")+'</span><button class="btn b2" id="rmf" style="flex:none;padding:12px 18px">حذف</button></div><div class="hint">الرفع المباشر حدّه 20 ميغابايت. للملفات الأكبر (حتى 200MB) ارفعها على Google Drive وضع الرابط في الحقل الأخير.</div>');
- h+='</div><div class="bar"><button class="btn b2" id="cx">إلغاء</button><button class="btn b1" id="sv" style="flex:2">حفظ ونشر</button></div>';
- $("panel").innerHTML=h;$("panel").style.display="block";try{lenis.stop()}catch(x){}
- $("cx").onclick=closeEd;
- $("rmp").onclick=function(){D.photo="";$("pp").style.display="none"};
- $("rmf").onclick=function(){D.pdfUrl="";$("fn").textContent="لا يوجد ملف"};
- $("upp").onclick=function(){pick("image/*",20,function(u){D.photo=u;$("pp").src=u;$("pp").style.display="block"})};
- $("upf").onclick=function(){pick("application/pdf",20,function(u,fl){D.pdfUrl=u;$("fn").textContent=fl.name})};
- $("sv").onclick=save;
-}
-function closeEd(){$("panel").style.display="none";$("panel").innerHTML="";try{lenis.start()}catch(x){}}
-async function pick(acc,mb,cb){
- var inp=document.createElement("input");inp.type="file";inp.accept=acc;
- inp.onchange=async function(){var fl=inp.files[0];if(!fl)return;
-  if(fl.size>mb*1048576)return toast("الملف أكبر من "+mb+" ميغابايت — استخدم رابط Google Drive");
-  try{var a=await claude.use("assets");if(!a)return toast("الرفع غير متاح لك");toast("جارٍ الرفع…");var r=await a.upload(fl);cb(r.url,fl);toast("تم الرفع")}catch(x){toast("فشل الرفع")}};
- inp.click();
-}
-function collect(){
- document.querySelectorAll("#panel [data-k]").forEach(function(i){D[i.dataset.k]=i.value.trim()});
- D.stats=[0,1,2].map(function(i){var g=function(k){return document.querySelector('#panel [data-s="'+i+"."+k+'"]').value.trim()};return{n:g("n"),ar:g("ar"),en:g("en")}});
- D.whatsapp=String(D.whatsapp).replace(/\D/g,"");
- ["instagram","tiktok","telegram"].forEach(function(k){D[k]=String(D[k]).replace(/^@/,"")});
-}
-function buildDoc(cfg){
- var c=document.documentElement.cloneNode(true);
- c.querySelector("#app").innerHTML="";c.querySelector("#panel").innerHTML="";c.querySelector("#panel").removeAttribute("style");
- var g=c.querySelector("#gear");g.removeAttribute("style");c.querySelector("#toast").removeAttribute("style");c.querySelector("#toast").textContent="";
- c.querySelector("#cfg").textContent=JSON.stringify(cfg).replace(/</g,"\\u003c");
- c.removeAttribute("class");c.removeAttribute("style");c.querySelector("body").removeAttribute("style");c.querySelector("body").removeAttribute("class");
- return "<!DOCTYPE html>\n"+c.outerHTML;
-}
-async function save(){
- collect();$("sv").disabled=true;$("sv").textContent="جارٍ النشر…";
- try{var a=await claude.use("artifact");if(!a)throw 0;var r=await a.publish(buildDoc(D));if(r&&r.conflict)toast("تعارض: أعد المحاولة")}
- catch(x){toast("تعذر النشر");$("sv").disabled=false;$("sv").textContent="حفظ ونشر"}
-}
-(async function(){try{var u=await claude.use("user");if(u&&await u.isOwner()){var g=$("gear");g.style.display="grid";g.onclick=openEd}}catch(x){}})();
-</script>
-
-
-</body></html>
+ if(pu)h+='<a class="link" style="margin-top:22px;border-color:var(--teal)" target="_blank" rel="noopener" href="'+e(pu)+'"><div class="ico">'+I.pdf+'</div><div class="tx"><div class="t">'+e(f("pdfName"))+'</div><div class="h">PDF · '+t("dl")+'</div></div><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentCol
